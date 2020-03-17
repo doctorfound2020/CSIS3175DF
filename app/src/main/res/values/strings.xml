@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">test</string>
+    <!--    MainActivity splash activity -->
+    <string name="txtTitleDF">Doctor Found</string>
+    <string name="txtDFSlogan">The Best Place To Find Doctors Near You!</string>
+    <!--    LoginActivity-->
+    <string name="txtTitleLogin">Login</string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="btnSignUp">Sign Up</string>
+
+
 </resources>
