@@ -1,14 +1,52 @@
 <resources>
     <string name="app_name">test</string>
+
     <!--    MainActivity splash activity -->
     <string name="txtTitleDF">Doctor Found</string>
     <string name="txtDFSlogan">The Best Place To Find Doctors Near You!</string>
+
     <!--    LoginActivity-->
     <string name="txtTitleLogin">Login</string>
-    <string name="hintUsername">Username</string>
+    <string name="hintUsernameLogin">Username</string>
     <string name="hintPassword">Password</string>
     <string name="btnSignIn">Sign In</string>
     <string name="btnSignUp">Sign Up</string>
+
+    <!--    SignUpActivity or EditProfileActivity-->
+    <string name="txtTitleSignUp">Sign Up</string>
+    <string name="txtTitleEditProfile">Edit Profile</string>
+    <string name="txtPersonalInformation">Personal Information:</string>
+    <string name="hintFirstName">First Name</string>
+    <string name="hintLastName">Last Name</string>
+    <string name="txtFullName">Full Name</string>
+    <string name="hintUsernameSignUp">Username</string>
+    <string name="hintPasswordSignUp">Password</string>
+    <string name="hintPasswordConfirmSignUp">Confirm Password</string>
+    <string-array name="txtGender">Gender
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="hintBirthDay">Birth Date (YYYY MM DD)</string>
+    <string name="hintProvince">Province</string>
+    <string name="hintCity">City</string>
+
+    <string name="txtNotForPatient">Note that the following info is ONLY required for Doctors/Cashiers:</string>
+        <string-array name="txtCertification">Certification
+            <item>Certificate</item>
+            <item>Diploma</item>
+            <item>Bachelor's Degree</item>
+            <item>Masters's Degree</item>
+            <item>PhD</item>
+        </string-array>
+
+    <string name="txtNotForDoctorCashier">Note that the following info is ONLY required for Patients:</string>
+        <string name="txtPaymentInformation">Payment Information:</string>
+        <string name="txtCreditNumber">Credit/Debit</string>
+        <string name="hintCreditNumber">XXXX XXXX XXXX XXXX</string>
+        <string name="txtCVV">CVV:</string>
+        <string name="hintCVV">XXX</string>
+        <string name="txtExpiration">Expiration Date:(MM YY)</string>
 
 
 </resources>
