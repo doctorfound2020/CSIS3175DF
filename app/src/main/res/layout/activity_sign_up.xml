@@ -206,7 +206,7 @@
                 <Spinner
                     android:id="@+id/spinnerCertification"
                     android:layout_width="match_parent"
-                    android:layout_height="51dp"
+                    android:layout_height="50dp"
                     android:background="#007EA7"
                     android:entries="@array/spinnerCertification" />
 
@@ -215,7 +215,7 @@
                 <TextView
                     android:id="@+id/txtForPatient"
                     android:layout_width="match_parent"
-                    android:layout_height="67dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="50dp"
                     android:text="@string/txtForPatient"

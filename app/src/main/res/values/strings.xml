@@ -40,8 +40,8 @@
             <item>None</item>
             <item>Certificate</item>
             <item>Diploma</item>
-            <item>Bachelor's Degree</item>
-            <item>Masters's Degree</item>
+            <item>Bachelors Degree</item>
+            <item>Masters Degree</item>
             <item>PhD</item>
         </string-array>
 
