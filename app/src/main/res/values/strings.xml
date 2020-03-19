@@ -24,34 +24,34 @@
     <string name="hintFirstName">First Name</string>
     <string name="hintLastName">Last Name</string>
     <string name="txtFullName">Full Name</string>
-<!--    <string-array name="txtGender">Gender-->
-<!--        <item>Male</item>-->
-<!--        <item>Female</item>-->
-<!--        <item>Other</item>-->
-<!--    </string-array>-->
+    <!--    <string-array name="txtGender">Gender-->
+    <!--        <item>Male</item>-->
+    <!--        <item>Female</item>-->
+    <!--        <item>Other</item>-->
+    <!--    </string-array>-->
     <string name="hintPhone">Phone Number (###-###-####)</string>
     <string name="hintBirthDay">Birth Date (YYYY MM DD)</string>
     <string name="hintProvince">Province</string>
     <string name="hintCity">City</string>
 
     <string name="txtForDoctorCashier">Note that the following info is ONLY required for Doctors or Cashiers:</string>
-        <string name="txtCertification">Certification:</string>
-        <string-array name="spinnerCertification">
-            <item>None</item>
-            <item>Certificate</item>
-            <item>Diploma</item>
-            <item>Bachelors Degree</item>
-            <item>Masters Degree</item>
-            <item>PhD</item>
-        </string-array>
+    <string name="txtCertification">Certification:</string>
+    <string-array name="spinnerCertification">
+        <item>None</item>
+        <item>Certificate</item>
+        <item>Diploma</item>
+        <item>Bachelors Degree</item>
+        <item>Masters Degree</item>
+        <item>PhD</item>
+    </string-array>
 
     <string name="txtForPatient">Note that the following info is ONLY required for Patients:</string>
-        <string name="txtPaymentInformation">Payment Information:</string>
-        <string name="txtCreditNumber">Credit/Debit</string>
-        <string name="hintCreditNumber">XXXX XXXX XXXX XXXX</string>
-        <string name="txtCVV">CVV</string>
-        <string name="hintCVV">XXX</string>
-        <string name="txtExpiration">Expiration Date</string>
-        <string name="hintExpiration">(MM YY)</string>
+    <string name="txtPaymentInformation">Payment Information:</string>
+    <string name="txtCreditNumber">Credit/Debit</string>
+    <string name="hintCreditNumber">XXXX XXXX XXXX XXXX</string>
+    <string name="txtCVV">CVV</string>
+    <string name="hintCVV">XXX</string>
+    <string name="txtExpiration">Expiration Date</string>
+    <string name="hintExpiration">(MM YY)</string>
 
 </resources>

@@ -315,17 +315,6 @@
                     tools:ignore="autofill"/>
 
             <!-- Buttons to Sign Up or Sign In-->
-                <Button
-                    android:id="@+id/btnSignInSU"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="#FFFFFF"
-                    android:text="@string/btnSignIn"
-                    android:textColor="#000000"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:fontFamily="serif"
-                    android:layout_marginTop="50dp"/>
 
                 <Button
                     android:id="@+id/btnSignUpSU"
@@ -333,6 +322,18 @@
                     android:layout_height="50dp"
                     android:background="#FFFFFF"
                     android:text="@string/btnSignUp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:layout_marginTop="50dp"/>
+
+                <Button
+                    android:id="@+id/btnSignInSU"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:text="@string/btnSignIn"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:fontFamily="serif"
