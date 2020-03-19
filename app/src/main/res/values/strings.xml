@@ -15,24 +15,29 @@
     <!--    SignUpActivity or EditProfileActivity-->
     <string name="txtTitleSignUp">Sign Up</string>
     <string name="txtTitleEditProfile">Edit Profile</string>
+
+    <string name="hintUsernameSignUp">Username</string>
+    <string name="hintPasswordSignUp">Password</string>
+    <string name="hintPasswordConfirmSignUp">Confirm Password</string>
+
     <string name="txtPersonalInformation">Personal Information:</string>
     <string name="hintFirstName">First Name</string>
     <string name="hintLastName">Last Name</string>
     <string name="txtFullName">Full Name</string>
-    <string name="hintUsernameSignUp">Username</string>
-    <string name="hintPasswordSignUp">Password</string>
-    <string name="hintPasswordConfirmSignUp">Confirm Password</string>
-    <string-array name="txtGender">Gender
-        <item>Male</item>
-        <item>Female</item>
-        <item>Other</item>
-    </string-array>
+<!--    <string-array name="txtGender">Gender-->
+<!--        <item>Male</item>-->
+<!--        <item>Female</item>-->
+<!--        <item>Other</item>-->
+<!--    </string-array>-->
+    <string name="hintPhone">Phone Number (###-###-####)</string>
     <string name="hintBirthDay">Birth Date (YYYY MM DD)</string>
     <string name="hintProvince">Province</string>
     <string name="hintCity">City</string>
 
-    <string name="txtNotForPatient">Note that the following info is ONLY required for Doctors/Cashiers:</string>
-        <string-array name="txtCertification">Certification
+    <string name="txtForDoctorCashier">Note that the following info is ONLY required for Doctors or Cashiers:</string>
+        <string name="txtCertification">Certification:</string>
+        <string-array name="spinnerCertification">
+            <item>None</item>
             <item>Certificate</item>
             <item>Diploma</item>
             <item>Bachelor's Degree</item>
@@ -40,13 +45,13 @@
             <item>PhD</item>
         </string-array>
 
-    <string name="txtNotForDoctorCashier">Note that the following info is ONLY required for Patients:</string>
+    <string name="txtForPatient">Note that the following info is ONLY required for Patients:</string>
         <string name="txtPaymentInformation">Payment Information:</string>
         <string name="txtCreditNumber">Credit/Debit</string>
         <string name="hintCreditNumber">XXXX XXXX XXXX XXXX</string>
-        <string name="txtCVV">CVV:</string>
+        <string name="txtCVV">CVV</string>
         <string name="hintCVV">XXX</string>
-        <string name="txtExpiration">Expiration Date:(MM YY)</string>
-
+        <string name="txtExpiration">Expiration Date</string>
+        <string name="hintExpiration">(MM YY)</string>
 
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,18 +9,338 @@
     tools:context=".SignUpActivity">
 
     <ScrollView
-        android:layout_width="411dp"
-        android:layout_height="1289dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitleSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTitleSignUp"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:fontFamily="serif"
+                android:gravity="center"
+                android:paddingTop="50dp"/>
+
+            <!--Username and Password-->
+                <EditText
+                    android:id="@+id/etUsernameSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintUsernameSignUp"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="24sp"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    tools:ignore="autofill"/>
+
+                <EditText
+                    android:id="@+id/etPasswordSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintPasswordSignUp"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="24sp"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    tools:ignore="autofill"/>
+
+                <EditText
+                    android:id="@+id/etPasswordConfirmSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintPasswordConfirmSignUp"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="24sp"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    tools:ignore="autofill"/>
+
+            <!--Personal Information-->
+                <TextView
+                    android:id="@+id/txtPersonalInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtPersonalInformation"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="50dp"/>
+
+                <TextView
+                    android:id="@+id/txtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFullName"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintFirstName"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    tools:ignore="autofill"/>
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintLastName"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    tools:ignore="autofill"/>
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintPhone"
+                    android:inputType="phone"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    android:paddingTop="30dp"
+                    tools:ignore="autofill"/>
+
+                <EditText
+                    android:id="@+id/etBirthDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintBirthDay"
+                    android:inputType="date"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    tools:ignore="autofill"/>
+
+                <EditText
+                    android:id="@+id/etProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintProvince"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    tools:ignore="autofill"/>
+
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintCity"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    tools:ignore="autofill"/>
+
+            <!--Certification-->
+                <TextView
+                    android:id="@+id/txtForDoctorCashier"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="50dp"
+                    android:text="@string/txtForDoctorCashier"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    app:fontFamily="serif" />
+
+                <TextView
+                    android:id="@+id/txtCertification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCertification"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerCertification"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:background="#007EA7"
+                    android:entries="@array/spinnerCertification" />
+
+            <!--Banking Information-->
+
+                <TextView
+                    android:id="@+id/txtForPatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:gravity="center"
+                    android:paddingTop="50dp"
+                    android:text="@string/txtForPatient"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    app:fontFamily="serif" />
+
+                <TextView
+                    android:id="@+id/txtPaymentInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtPaymentInformation"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtCreditNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCreditNumber"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etCreditNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintCreditNumber"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    tools:ignore="autofill"/>
+
+                <TextView
+                    android:id="@+id/txtCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCVV"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintCVV"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    tools:ignore="autofill"/>
+
+                <TextView
+                    android:id="@+id/txtExpiration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtExpiration"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etExpiration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintExpiration"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    tools:ignore="autofill"/>
+
+            <!-- Buttons to Sign Up or Sign In-->
+                <Button
+                    android:id="@+id/btnSignInSU"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:text="@string/btnSignIn"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:layout_marginTop="50dp"/>
+
+                <Button
+                    android:id="@+id/btnSignUpSU"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:text="@string/btnSignUp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
