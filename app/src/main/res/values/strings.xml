@@ -2,56 +2,87 @@
     <string name="app_name">test</string>
 
     <!--    MainActivity splash activity -->
-    <string name="txtTitleDF">Doctor Found</string>
-    <string name="txtDFSlogan">The Best Place To Find Doctors Near You!</string>
+        <string name="txtTitleDF">Doctor Found</string>
+        <string name="txtDFSlogan">The Best Place To Find Doctors Near You!</string>
 
     <!--    LoginActivity-->
-    <string name="txtTitleLogin">Login</string>
-    <string name="hintUsernameLogin">Username</string>
-    <string name="hintPassword">Password</string>
-    <string name="btnSignIn">Sign In</string>
-    <string name="btnSignUp">Sign Up</string>
+        <string name="txtTitleLogin">Login</string>
+        <string name="hintUsernameLogin">Username</string>
+        <string name="hintPassword">Password</string>
+        <string name="btnSignIn">Sign In</string>
+        <string name="btnSignUp">Sign Up</string>
 
     <!--    SignUpActivity or EditProfileActivity-->
-    <string name="txtTitleSignUp">Sign Up</string>
-    <string name="txtTitleEditProfile">Edit Profile</string>
+        <string name="txtTitleSignUp">Sign Up</string>
+        <string name="txtTitleEditProfile">Edit Profile</string>
 
-    <string name="hintUsernameSignUp">Username</string>
-    <string name="hintPasswordSignUp">Password</string>
-    <string name="hintPasswordConfirmSignUp">Confirm Password</string>
+        <string name="hintUsernameSignUp">Username</string>
+        <string name="hintPasswordSignUp">Password</string>
+        <string name="hintPasswordConfirmSignUp">Confirm Password</string>
 
-    <string name="txtPersonalInformation">Personal Information:</string>
-    <string name="hintFirstName">First Name</string>
-    <string name="hintLastName">Last Name</string>
-    <string name="txtFullName">Full Name</string>
-    <!--    <string-array name="txtGender">Gender-->
-    <!--        <item>Male</item>-->
-    <!--        <item>Female</item>-->
-    <!--        <item>Other</item>-->
-    <!--    </string-array>-->
-    <string name="hintPhone">Phone Number (###-###-####)</string>
-    <string name="hintBirthDay">Birth Date (YYYY MM DD)</string>
-    <string name="hintProvince">Province</string>
-    <string name="hintCity">City</string>
+        <string name="txtPersonalInformation">Personal Information:</string>
+        <string name="hintFirstName">First Name</string>
+        <string name="hintLastName">Last Name</string>
+        <string name="txtFullName">Full Name</string>
+        <string name="hintPhone">Phone Number (###-###-####)</string>
+        <string name="hintBirthDay">Birth Date (YYYY MM DD)</string>
+        <string name="hintProvince">Province</string>
+        <string name="hintCity">City</string>
 
-    <string name="txtForDoctorCashier">Note that the following info is ONLY required for Doctors or Cashiers:</string>
-    <string name="txtCertification">Certification:</string>
-    <string-array name="spinnerCertification">
-        <item>None</item>
-        <item>Certificate</item>
-        <item>Diploma</item>
-        <item>Bachelors Degree</item>
-        <item>Masters Degree</item>
-        <item>PhD</item>
-    </string-array>
+        <string name="txtForDoctorCashier">Note that the following info is ONLY required for Doctors or Cashiers:</string>
+            <string name="txtCertification">Certification:</string>
+            <string-array name="spinnerCertification">
+                <item>None</item>
+                <item>Certificate</item>
+                <item>Diploma</item>
+                <item>Bachelors Degree</item>
+                <item>Masters Degree</item>
+                <item>PhD</item>
+            </string-array>
 
-    <string name="txtForPatient">Note that the following info is ONLY required for Patients:</string>
-    <string name="txtPaymentInformation">Payment Information:</string>
-    <string name="txtCreditNumber">Credit/Debit</string>
-    <string name="hintCreditNumber">XXXX XXXX XXXX XXXX</string>
-    <string name="txtCVV">CVV</string>
-    <string name="hintCVV">XXX</string>
-    <string name="txtExpiration">Expiration Date</string>
-    <string name="hintExpiration">(MM YY)</string>
+        <string name="txtForPatient">Note that the following info is ONLY required for Patients:</string>
+            <string name="txtPaymentInformation">Payment Information:</string>
+            <string name="txtCreditNumber">Credit/Debit</string>
+            <string name="hintCreditNumber">XXXX XXXX XXXX XXXX</string>
+            <string name="txtCVV">CVV</string>
+            <string name="hintCVV">XXX</string>
+            <string name="txtExpiration">Expiration Date</string>
+            <string name="hintExpiration">(MM YY)</string>
+
+
+    <!--    PatientHomePageActivity -->
+        <string name="txtTitlePatientHomePage">Welcome to the Patient Home Page</string>
+        <string name="imgPatientHomePage">Patient Home Image</string>
+        <string name="txtInstructionsHomePage">Please select one of the options below, or use the navigation bar to alternatively choose.</string> <!--common for all users-->
+        <string name="btnBookAppointment">Book An Appointment Today!</string>
+        <string name="btnCheckAppointment">Check Your Upcoming Appointments</string>
+        <string name="btnSendMessageToDoctor">Send Messages To A Doctor</string> hh
+        <string name="btnViewMessageFromDoctor">View Messages From A Doctor</string>
+        <string name="btnViewReminderFromCashier">View Your Reminders From A Cashier</string> <!--common for doctor/patient-->
+        <string name="btnViewHistory">View Your User History</string> <!--common for doctor/patient-->
+
+    <!--    DoctorHomePageActivity -->
+        <string name="txtTitleDoctorHomePage">Welcome to the Doctor Home Page</string>
+        <string name="imgDoctorHomePage">Doctor Home Image</string>
+        <string name="btnCheckAppointmentDoctor">Check Your Upcoming Appointments</string>
+        <string name="btnSendMessageToPatient">Send Messages To A Patient</string> <!--simply send a message-->
+        <string name="btnViewMessageFromPatient">View Messages From A Patient</string> <!--ability to respond, pulls up send message page-->
+
+    <!--    AdminHomePageActivity -->
+        <string name="txtTitleAdminHomePage">Welcome to the Admin Home Page</string>
+        <string name="imgAdminHomePage">Admin Home Image</string>
+        <string name="btnAddPatient">Add Patient</string>
+        <string name="btnEditPatient">Edit Patient</string>
+        <string name="btnAddDoctor">Add Doctor</string>
+        <string name="btnEditDoctor">Edit Doctor</string>
+        <string name="btnAddCashier">Add Cashier</string>
+        <string name="btnEditCashier">Edit Cashier</string>
+
+    <!--    CashierHomePageActivity -->
+        <string name="txtTitleCashierHomePage">Welcome to the Cashier Home Page</string>
+        <string name="imgCashierHomePage">Cashier Home Image</string>
+        <string name="btnViewAllAppointment">View All Appointments Between Doctors and Patients</string> <!--simply view appointments, cant send-->
+        <string name="btnSendReminderDoctorPatient">Send A Reminder To A Doctor or Patient </string> <!--simply send, cant view in this section-->
+
 
 </resources>
