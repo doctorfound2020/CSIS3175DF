@@ -129,17 +129,17 @@
 
             <View
                 android:id="@+id/dPhm4"
-                android:layout_row="1"
+                android:layout_row="3"
                 android:layout_columnSpan="2"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="#007EA7"  />
 
             <Button
-                android:id="@+id/btnViewReminderFromCashier"
+                android:id="@+id/btnViewReminderFromCashierPatient"
                 android:layout_width="175dp"
                 android:layout_height="150dp"
-                android:layout_row="3"
+                android:layout_row="4"
                 android:layout_column="0"
                 android:layout_margin="15dp"
                 android:background="#FFFFFF"
@@ -152,7 +152,7 @@
                 android:id="@+id/btnViewHistoryPatient"
                 android:layout_width="175dp"
                 android:layout_height="150dp"
-                android:layout_row="3"
+                android:layout_row="4"
                 android:layout_column="1"
                 android:layout_margin="15dp"
                 android:layout_marginTop="25dp"

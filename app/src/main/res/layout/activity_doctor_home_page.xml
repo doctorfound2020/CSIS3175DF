@@ -1,9 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#003459"
     tools:context=".DoctorHomePageActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitleDoctorHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/txtTitleDoctorHomePage"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:fontFamily="serif"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/dDhm1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7" />
+
+        <ImageView
+            android:id="@+id/imgDoctorHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="624dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/imgDoctorHomePage"
+            android:gravity="center"
+            android:src="@drawable/doctor_home_page" />
+
+        <TextView
+            android:id="@+id/txtInstructionsDoctorHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txtInstructionsHomePage"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"
+            app:fontFamily="serif" />
+
+        <View
+            android:id="@+id/dDhm2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <Button
+                android:id="@+id/btnCheckAppointmentDoctor"
+                android:layout_width="375dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_columnSpan="2"
+                android:layout_margin="15dp"
+                android:background="#FFFFFF"
+                android:text="@string/btnCheckAppointmentDoctor"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
+            <View
+                android:id="@+id/dDhm3"
+                android:layout_row="1"
+                android:layout_columnSpan="2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#007EA7"  />
+
+            <Button
+                android:id="@+id/btnSendMessageToPatient"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                android:layout_marginTop="25dp"
+                android:background="#FFFFFF"
+                android:text="@string/btnSendMessageToPatient"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
+            <Button
+                android:id="@+id/btnViewMessageFromPatient"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                android:layout_marginTop="25dp"
+                android:background="#FFFFFF"
+                android:text="@string/btnViewMessageFromPatient"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
+            <View
+                android:id="@+id/dDhm4"
+                android:layout_row="3"
+                android:layout_columnSpan="2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#007EA7"  />
+
+            <Button
+                android:id="@+id/btnViewReminderFromCashierDoctor"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                android:background="#FFFFFF"
+                android:text="@string/btnViewReminderFromCashier"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
+            <Button
+                android:id="@+id/btnViewHistoryDoctor"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                android:layout_marginTop="25dp"
+                android:background="#FFFFFF"
+                android:text="@string/btnViewHistory"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
