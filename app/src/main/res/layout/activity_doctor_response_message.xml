@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003459"
+    android:orientation="vertical"
+    tools:context=".DoctorResponseMessage">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/txtdcresponsemessage"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#007EA7"></View>
+
+    <EditText
+        android:id="@+id/etxtPN"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@android:color/white"
+        android:hint="@string/etxtpatientname"
+        android:inputType="text"
+        tools:ignore="Autofill"
+        android:fontFamily="serif"></EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#007EA7"></View>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@android:color/white"
+        android:hint="@string/etxttitle"
+        android:inputType="text"
+        tools:ignore="Autofill"
+        android:fontFamily="serif"></EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#007EA7"></View>
+
+    <EditText
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:background="@android:color/white"
+        android:hint="@string/etxtinfo"
+        android:inputType="text"
+        tools:ignore="Autofill"
+        android:fontFamily="serif"></EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#007EA7"></View>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnrespon"
+            android:layout_gravity="center"
+            android:fontFamily="serif">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btndiscard"
+            android:layout_gravity="center"
+            android:fontFamily="serif">
+        </Button>
+    </GridLayout>
+
+</LinearLayout>
