@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-        //The following buttons are used for testing purposes
+        //The following buttons are used for testing purposes.
         Button btnToPatientTEST = findViewById(R.id.btnToPatientTEST);
         btnToPatientTEST.setOnClickListener(new View.OnClickListener() {
             @Override
