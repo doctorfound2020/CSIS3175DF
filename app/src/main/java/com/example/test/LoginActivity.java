@@ -28,5 +28,42 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
+
+        //The following buttons are used for testing purposes
+        Button btnToPatientTEST = findViewById(R.id.btnToPatientTEST);
+        btnToPatientTEST.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, PatientHomePageActivity.class));
+            }
+        });
+
+
+        Button btnToDoctorTEST = findViewById(R.id.btnToDoctorTEST);
+        btnToDoctorTEST.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, DoctorHomePageActivity.class));
+            }
+        });
+
+
+        Button btnToAdminTEST = findViewById(R.id.btnToAdminTEST);
+        btnToAdminTEST.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, AdminHomePageActivity.class));
+            }
+        });
+
+
+        Button btnToCashierTEST = findViewById(R.id.btnToCashierTEST);
+        btnToSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, CashierHomePageActivity.class));
+            }
+        });
+
     }
 }

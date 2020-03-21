@@ -84,5 +84,10 @@
         <string name="btnViewAllAppointment">View All Appointments Between Doctors and Patients</string> <!--simply view appointments, cant send-->
         <string name="btnSendReminderDoctorPatient">Send A Reminder To A Doctor or Patient </string> <!--simply send, cant view in this section-->
 
+    <!-- Some Test Fields(Buttons), Will be deleted in final version -->
+        <string name="btnToPatientTEST">To Patient TEST</string>
+        <string name="btnToDoctorTEST">To Doctor TEST</string>
+        <string name="btnToAdminTEST">To Admin TEST</string>
+        <string name="btnToCashierTEST">To Cashier TEST</string>
 
 </resources>
