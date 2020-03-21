@@ -39,7 +39,8 @@
             android:layout_marginBottom="10dp"
             android:contentDescription="@string/imgDoctorHomePage"
             android:gravity="center"
-            android:src="@drawable/doctor_home_page" />
+            android:src="@drawable/doctor_home_page"
+            />
 
         <TextView
             android:id="@+id/txtInstructionsDoctorHomePage"
