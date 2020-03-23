@@ -30,7 +30,7 @@ public class DoctorFoundSchema {
             public static final String PHONE="Phone Number";
             public static final String ADDRESS="Home Address";
             public static final String NAME = "Full Name";
-
+            public static final String EMAIL="Email";
         }
 
     }
@@ -40,7 +40,7 @@ public class DoctorFoundSchema {
             public static final String PHONE="Phone Number";
             public static final String ADDRESS="Home Address";
             public static final String NAME = "Full Name";
-
+            public static final String EMAIL="Email";
 
         }
 
