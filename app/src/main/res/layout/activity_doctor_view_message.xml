@@ -22,7 +22,7 @@
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:gravity="center"
-            android:fontFamily="serif">
+            app:fontFamily="serif">
         </TextView>
 
         <View
@@ -47,7 +47,7 @@
                 android:textSize="20sp"
                 android:background="@android:color/white"
                 android:layout_marginTop="10dp"
-                android:fontFamily="serif">
+                app:fontFamily="serif">
             </TextView>
 
             <Button
@@ -56,7 +56,7 @@
                 android:layout_gravity="center"
                 android:text="@string/btnrespon"
                 android:layout_marginTop="10dp"
-                android:fontFamily="serif">
+                app:fontFamily="serif">
 
             </Button>
 

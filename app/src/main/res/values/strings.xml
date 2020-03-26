@@ -11,6 +11,12 @@
     <string name="date">Date Selection</string>
     <string name="time">Time Selection</string>
     <string name="etxtlocation">Enter your City</string>
+    <string-array name="doctorsname">
+        <item>Dr.One</item>
+        <item>Dr.Two</item>
+        <item>Dr.Three</item>
+        <item>Dr.Four</item>
+    </string-array>
 
     <!-- PatientCheckAppointment  -->
     <string name="btncancel">Cancel</string>

@@ -17,7 +17,7 @@
         android:textColor="@android:color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        android:fontFamily="serif"></TextView>
+        app:fontFamily="serif"></TextView>
 
     <View
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:hint="@string/etxtpatientname"
         android:inputType="text"
         tools:ignore="Autofill"
-        android:fontFamily="serif"></EditText>
+        app:fontFamily="serif"></EditText>
 
     <View
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         android:hint="@string/etxttitle"
         android:inputType="text"
         tools:ignore="Autofill"
-        android:fontFamily="serif"></EditText>
+        app:fontFamily="serif"></EditText>
 
     <View
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:hint="@string/etxtinfo"
         android:inputType="text"
         tools:ignore="Autofill"
-        android:fontFamily="serif"></EditText>
+        app:fontFamily="serif"></EditText>
 
     <View
         android:layout_width="match_parent"
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:text="@string/btnrespon"
             android:layout_gravity="center"
-            android:fontFamily="serif">
+            app:fontFamily="serif">
 
         </Button>
 
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="@string/btndiscard"
             android:layout_gravity="center"
-            android:fontFamily="serif">
+            app:fontFamily="serif">
         </Button>
     </GridLayout>
 

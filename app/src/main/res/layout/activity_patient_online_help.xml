@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:gravity="center"
-        android:fontFamily="serif">
+        app:fontFamily="serif">
     </TextView>
 
     <View
@@ -32,7 +32,7 @@
         android:layout_height="80dp"
         android:text="@string/btnsend"
         android:layout_gravity="center"
-        android:fontFamily="serif">
+        app:fontFamily="serif">
     </Button>
 
     <View

@@ -22,7 +22,7 @@
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:gravity="center"
-            android:fontFamily="serif">
+            app:fontFamily="serif">
         </TextView>
 
         <View
@@ -38,10 +38,12 @@
             android:layout_gravity="center"
             android:text="@string/txtinfo"
             android:textSize="20sp"
-            android:fontFamily="serif"
+            app:fontFamily="serif"
             android:background="@android:color/white"
             android:layout_marginTop="10dp">
         </TextView>
+
+        
 
     </LinearLayout>
 
