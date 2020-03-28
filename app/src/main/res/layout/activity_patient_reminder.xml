@@ -26,16 +26,11 @@
         android:background="#007EA7">
     </View>
 
-    <TextView
-        android:id="@+id/txtinfo1"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:text="@string/txtreminderinfo"
-        android:textSize="20sp"
-        android:background="@android:color/white"
-        android:layout_marginTop="10dp"
-        app:fontFamily="serif">
-    </TextView>
+    <ListView
+        android:id="@+id/lvPatientReminder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+    </ListView>
 
 </LinearLayout>

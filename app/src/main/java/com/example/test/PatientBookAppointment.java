@@ -24,6 +24,9 @@ public class PatientBookAppointment extends AppCompatActivity {
         //set title
         setTitle("Doctor Found Patient Book Appointment");
 
+        //up bottom
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         //select doctor spinner
         Spinner spinner = findViewById(R.id.spinnerDoctor);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this,R.array.doctorsname,R.layout.color_spinner_layout);

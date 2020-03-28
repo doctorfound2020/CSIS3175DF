@@ -22,6 +22,7 @@
     <string name="btncancel">Cancel</string>
     <string name="txtinfo">Appointment info</string>
     <string name="txtcheckapp">Check Appointments</string>
+    <string name="txthint">To cancel the appointment, please long click the appointment.</string>
 
     <!-- PatientOnlineHelp  -->
     <string name="btnsend">Send messages to Doctor</string>
@@ -51,6 +52,7 @@
     <string name="txtviewmessage">View Message from Doctor</string>
     <string name="txtdcviewmessage">View Messages from Patient</string>
     <string name="txtpxmessage">Patient\'s Message</string>
+    <string name="txthint1">To respond the message, please click the message.</string>
 
 
 
