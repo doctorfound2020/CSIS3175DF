@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -26,6 +28,10 @@ public class PatientBookAppointment extends AppCompatActivity {
 
         //up bottom
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //radio group and buttons
+        RadioGroup radioGroup = findViewById(R.id.radiogroup);
+        RadioButton radioButton = findViewById(radioGroup.getCheckedRadioButtonId());
 
         //select doctor spinner
         Spinner spinner = findViewById(R.id.spinnerDoctor);
