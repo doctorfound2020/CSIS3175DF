@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#003459"
+    android:orientation="vertical"
     tools:context=".DoctorViewMessage">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
 
         <TextView
             android:id="@+id/txttop"
@@ -33,36 +29,21 @@
 
 
 
-        <GridLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:columnCount="2">
+            android:layout_height="wrap_content"
+            android:text="@string/txthint1"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            app:fontFamily="serif"></TextView>
 
-            <TextView
-                android:id="@+id/txtinfo1"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:text="@string/txtpxmessage"
-                android:textSize="20sp"
-                android:background="@android:color/white"
-                android:layout_marginTop="10dp"
-                app:fontFamily="serif">
-            </TextView>
-
-            <Button
-                android:id="@+id/btnRespond"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:text="@string/btnrespon"
-                android:layout_marginTop="10dp"
-                app:fontFamily="serif">
-
-            </Button>
-
-        </GridLayout>
+        <ListView
+            android:id="@+id/lvDoctorVM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+        </ListView>
 
 
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>
