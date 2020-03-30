@@ -53,10 +53,11 @@
     <!--    PatientHomePageActivity -->
         <string name="txtTitlePatientHomePage">Welcome to the Patient Home Page</string>
         <string name="imgPatientHomePage">Patient Home Image</string>
-        <string name="txtInstructionsHomePage">Please select one of the options below, or use the navigation bar to alternatively choose.</string> <!--common for all users-->
+        <string name="txtInstructionsHomePage">Please select one of the options below.</string> <!--common for all users-->
         <string name="btnBookAppointment">Book An Appointment Today!</string>
         <string name="btnCheckAppointment">Check Your Upcoming Appointments</string>
-        <string name="btnSendMessageToDoctor">Send Messages To A Doctor</string> hh
+        <string name="btnPatientOnlineHelp">Patient Online Help</string>
+        <string name="btnSendMessageToDoctor">Send Messages To A Doctor</string>
         <string name="btnViewMessageFromDoctor">View Messages From A Doctor</string>
         <string name="btnViewReminderFromCashier">View Your Reminders From A Cashier</string> <!--common for doctor/patient-->
         <string name="btnViewHistory">View Your User History</string> <!--common for doctor/patient-->

@@ -100,30 +100,15 @@
                 android:background="#007EA7"  />
 
             <Button
-                android:id="@+id/btnSendMessageToDoctor"
-                android:layout_width="175dp"
+                android:id="@+id/btnPatientOnlineHelp"
+                android:layout_width="375dp"
                 android:layout_height="150dp"
-                android:layout_row="2"
-                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_columnSpan="2"
                 android:layout_margin="15dp"
-                android:layout_marginTop="25dp"
                 android:background="#FFFFFF"
-                android:text="@string/btnSendMessageToDoctor"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                app:fontFamily="serif" />
-
-            <Button
-                android:id="@+id/btnViewMessageFromDoctor"
-                android:layout_width="175dp"
-                android:layout_height="150dp"
-                android:layout_row="2"
-                android:layout_column="1"
-                android:layout_margin="15dp"
-                android:layout_marginTop="25dp"
-                android:background="#FFFFFF"
-                android:text="@string/btnViewMessageFromDoctor"
-                android:textSize="17sp"
+                android:text="@string/btnPatientOnlineHelp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:fontFamily="serif" />
 

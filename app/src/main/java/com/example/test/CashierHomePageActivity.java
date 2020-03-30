@@ -10,5 +10,7 @@ public class CashierHomePageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cashier_home_page);
+
+        setTitle("Doctor Found Cashier Home Page");
     }
 }
