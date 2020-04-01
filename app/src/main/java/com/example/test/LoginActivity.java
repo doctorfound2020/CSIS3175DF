@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         Button btnToCashierTEST = findViewById(R.id.btnToCashierTEST);
-        btnToSignUp.setOnClickListener(new View.OnClickListener() {
+        btnToCashierTEST.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, CashierHomePageActivity.class));
