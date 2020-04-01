@@ -21,6 +21,8 @@ public class PatientHomePageActivity extends AppCompatActivity {
         Button btnPatientOnlineHelp = findViewById(R.id.btnPatientOnlineHelp);
         Button btnViewReminderFromCashierPatient = findViewById(R.id.btnViewReminderFromCashierPatient);
         Button btnViewHistoryPatient = findViewById(R.id.btnViewHistoryPatient);
+        Button btnSignOutPatient = findViewById(R.id.btnSignOutPatient);
+        Button btnEditProfilePatient = findViewById(R.id.btnEditProfilePatient);
 
         /* CURRENTLY COMMENTED OUT - WILL UNCOMMENT WHEN MERGING CODE
         btnBookAppointment.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +56,18 @@ public class PatientHomePageActivity extends AppCompatActivity {
             }
         });
         */
+        btnSignOutPatient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PatientHomePageActivity.this, LogoutActivity.class));
+            }
+        });
+        btnEditProfilePatient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PatientHomePageActivity.this, EditAccountActivity.class));
+            }
+        });
 
     }
 }

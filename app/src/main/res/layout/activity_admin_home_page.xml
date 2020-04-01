@@ -163,6 +163,42 @@
                 android:textStyle="bold"
                 app:fontFamily="serif" />
 
+            <View
+                android:id="@+id/dAhm5"
+                android:layout_row="5"
+                android:layout_columnSpan="2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#007EA7"  />
+
+            <Button
+                android:id="@+id/btnSignOutAdmin"
+                android:layout_width="175dp"
+                android:layout_height="100dp"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                android:layout_marginTop="25dp"
+                android:background="#FFFFFF"
+                android:text="@string/btnSignOut"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
+            <Button
+                android:id="@+id/btnEditProfileAdmin"
+                android:layout_width="175dp"
+                android:layout_height="100dp"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                android:layout_marginTop="25dp"
+                android:background="#FFFFFF"
+                android:text="@string/btnEditProfile"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
 
         </GridLayout>
 

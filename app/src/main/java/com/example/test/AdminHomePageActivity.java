@@ -22,6 +22,8 @@ public class AdminHomePageActivity extends AppCompatActivity {
         Button btnEditDoctor = findViewById(R.id.btnEditDoctor);
         Button btnAddCashier = findViewById(R.id.btnAddCashier);
         Button btnEditCashier = findViewById(R.id.btnEditCashier);
+        Button btnSignOutAdmin = findViewById(R.id.btnSignOutAdmin);
+        Button btnEditProfileAdmin = findViewById(R.id.btnEditProfileAdmin);
 
 
         btnAddPatient.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +57,18 @@ public class AdminHomePageActivity extends AppCompatActivity {
             }
         });
         btnEditCashier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminHomePageActivity.this, EditAccountActivity.class));
+            }
+        });
+        btnSignOutAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminHomePageActivity.this, LogoutActivity.class));
+            }
+        });
+        btnEditProfileAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AdminHomePageActivity.this, EditAccountActivity.class));

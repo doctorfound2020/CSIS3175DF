@@ -2,7 +2,10 @@ package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class CashierHomePageActivity extends AppCompatActivity {
 
@@ -12,5 +15,28 @@ public class CashierHomePageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cashier_home_page);
 
         setTitle("Doctor Found Cashier Home Page");
+
+        Button btnSignOutCashier = findViewById(R.id.btnSignOutAdmin);
+        Button btnEditProfileCashier = findViewById(R.id.btnEditProfileAdmin);
+        Button btnViewSendApptReminder = findViewById(R.id.btnViewSendApptReminder);
+
+        btnViewSendApptReminder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // startActivity(new Intent(CashierHomePageActivity.this, CashierSendReminder.class));
+            }
+        });
+        btnSignOutCashier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CashierHomePageActivity.this, LogoutActivity.class));
+            }
+        });
+        btnEditProfileCashier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CashierHomePageActivity.this, EditAccountActivity.class));
+            }
+        });
     }
 }
