@@ -9,8 +9,16 @@
     <string name="txtTitleLogin">Login</string>
     <string name="hintUsernameLogin">Username</string>
     <string name="hintPassword">Password</string>
+    <string name="txtChooseUserSignIn">Choose your User:</string>
+    <string-array name="sChooseUserSignIn">
+        <item>Patient</item>
+        <item>Doctor</item>
+        <item>Admin</item>
+        <item>Cashier</item>
+    </string-array>
     <string name="btnSignIn">Sign In</string>
     <string name="btnSignUp">Sign Up</string>
+
 
     <!--    LogoutActivity-->
     <string name="txtTitleLogout">Logout</string>
@@ -29,6 +37,14 @@
     <string name="hintUsernameSignUp">Username</string>
     <string name="hintPasswordSignUp">Password</string>
     <string name="hintPasswordConfirmSignUp">Confirm Password</string>
+
+    <string name="txtChooseUserSignUpEdit">Choose the USER you would like to be:</string>
+    <string-array name="sChooseUserSignUpEdit">
+        <item>Patient</item>
+        <item>Doctor</item>
+        <item>Admin</item>
+        <item>Cashier</item>
+    </string-array>
 
     <string name="txtPersonalInformation">Personal Information:</string>
     <string name="hintFirstName">First Name</string>

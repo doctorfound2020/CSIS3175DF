@@ -35,11 +35,11 @@
         app:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318"
-        tools:ignore="autofill"/>
+        app:layout_constraintVertical_bias="0.287"
+        tools:ignore="autofill" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -54,16 +54,16 @@
         app:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46"
-        tools:ignore="autofill"/>
+        app:layout_constraintVertical_bias="0.382"
+        tools:ignore="autofill" />
 
     <Button
         android:id="@+id/btnSignInSI"
-        android:layout_width="290dp"
-        android:layout_height="50dp"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
         android:background="#FFFFFF"
         android:text="@string/btnSignIn"
         android:textColor="#000000"
@@ -72,14 +72,42 @@
         app:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643"/>
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtChooseUserSignIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="serif"/>
+
+    <Spinner
+        android:id="@+id/sChooseUserSignIn"
+        android:layout_width="284dp"
+        android:layout_height="53dp"
+        android:background="#007EA7"
+        android:entries="@array/sChooseUserSignIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529" />
 
     <Button
         android:id="@+id/btnSignUpSI"
-        android:layout_width="288dp"
+        android:layout_width="285dp"
         android:layout_height="50dp"
         android:background="#FFFFFF"
         android:text="@string/btnSignUp"
@@ -91,7 +119,7 @@
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754" />
+        app:layout_constraintVertical_bias="0.767" />
 
     <Button
         android:id="@+id/btnToPatientTEST"
@@ -152,5 +180,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

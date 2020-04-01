@@ -74,6 +74,28 @@
                     android:gravity="center"
                     tools:ignore="autofill"/>
 
+            <!--Choose User-->
+                <TextView
+                    android:id="@+id/txtChooseUserSignUpEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtChooseUserSignUpEdit"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+                <Spinner
+                    android:id="@+id/sChooseUserSignUpEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#007EA7"
+                    android:entries="@array/sChooseUserSignUpEdit" />
+
+
             <!--Personal Information-->
                 <TextView
                     android:id="@+id/txtPersonalInformation"
