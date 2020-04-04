@@ -94,29 +94,30 @@ public class DoctorFoundSchema {
     String patientBirthdate, doctorBirthdate, adminBirthdate, cashierBirthdate;
     String patientAddress, doctorAddress, adminAddress, cashierAddress;
     String doctorCertification, cashierCertification;
-    int patientCreditNumber, patientCVV, patientExpDate;
+    String patientCreditNumber, patientCVV, patientExpDate;
 
-    public int getPatientCreditNumber() {
+
+    public String getPatientCreditNumber() {
         return patientCreditNumber;
     }
 
-    public void setPatientCreditNumber(int patientCreditNumber) {
+    public void setPatientCreditNumber(String patientCreditNumber) {
         this.patientCreditNumber = patientCreditNumber;
     }
 
-    public int getPatientCVV() {
+    public String getPatientCVV() {
         return patientCVV;
     }
 
-    public void setPatientCVV(int patientCVV) {
+    public void setPatientCVV(String patientCVV) {
         this.patientCVV = patientCVV;
     }
 
-    public int getPatientExpDate() {
+    public String getPatientExpDate() {
         return patientExpDate;
     }
 
-    public void setPatientExpDate(int patientExpDate) {
+    public void setPatientExpDate(String patientExpDate) {
         this.patientExpDate = patientExpDate;
     }
 

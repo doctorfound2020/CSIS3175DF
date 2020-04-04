@@ -34,9 +34,9 @@ public class DFhelper extends SQLiteOpenHelper {
                     DoctorFoundSchema.PatientTable.Cols.EMAIL + " TEXT, "+
                     DoctorFoundSchema.PatientTable.Cols.BIRTHDATE + " TEXT, " +
                     DoctorFoundSchema.PatientTable.Cols.ADDRESS + " TEXT, " +
-                    DoctorFoundSchema.PatientTable.Cols.CREDITNUMBER + " INTEGER, " +
-                    DoctorFoundSchema.PatientTable.Cols.CVV + " INTEGER, "
-                    +      DoctorFoundSchema.PatientTable.Cols.EXPDATE +" INTEGER)" ;
+                    DoctorFoundSchema.PatientTable.Cols.CREDITNUMBER + " TEXT, " +
+                    DoctorFoundSchema.PatientTable.Cols.CVV + " TEXT, "
+                    +      DoctorFoundSchema.PatientTable.Cols.EXPDATE +" TEXT)" ;
 
     private static final String cashierTable =
             "CREATE TABLE " + DoctorFoundSchema.CashierTable.NAME + " (" +
