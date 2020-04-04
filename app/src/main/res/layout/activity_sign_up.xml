@@ -122,29 +122,17 @@
                     android:paddingTop="10dp"/>
 
                 <EditText
-                    android:id="@+id/etFirstName"
+                    android:id="@+id/etFullName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="@string/hintFirstName"
+                    android:hint="@string/hintFullName"
                     android:inputType="textPersonName"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF"
                     android:textSize="20sp"
                     app:fontFamily="serif"
-                    tools:ignore="autofill"/>
-
-                <EditText
-                    android:id="@+id/etLastName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="@string/hintLastName"
-                    android:inputType="textPersonName"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"
-                    android:textSize="20sp"
-                    app:fontFamily="serif"
+                    android:gravity="center"
                     tools:ignore="autofill"/>
 
                 <EditText
@@ -162,6 +150,19 @@
                     tools:ignore="autofill"/>
 
                 <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hintEmail"
+                    android:inputType="date"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:fontFamily="serif"
+                    tools:ignore="autofill"/>
+
+                <EditText
                     android:id="@+id/etBirthDay"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -175,24 +176,11 @@
                     tools:ignore="autofill"/>
 
                 <EditText
-                    android:id="@+id/etProvince"
+                    android:id="@+id/etAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="@string/hintProvince"
-                    android:inputType="textPersonName"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"
-                    android:textSize="20sp"
-                    app:fontFamily="serif"
-                    tools:ignore="autofill"/>
-
-                <EditText
-                    android:id="@+id/etCity"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="@string/hintCity"
+                    android:hint="@string/hintAddress"
                     android:inputType="textPersonName"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF"

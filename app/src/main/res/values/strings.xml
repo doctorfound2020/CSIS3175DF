@@ -47,13 +47,12 @@
     </string-array>
 
     <string name="txtPersonalInformation">Personal Information:</string>
-    <string name="hintFirstName">First Name</string>
-    <string name="hintLastName">Last Name</string>
+    <string name="hintFullName">First Name &amp; Last Name</string>
     <string name="txtFullName">Full Name</string>
     <string name="hintPhone">Phone Number (###-###-####)</string>
+    <string name="hintEmail">Email</string>
     <string name="hintBirthDay">Birth Date (YYYY MM DD)</string>
-    <string name="hintProvince">Province</string>
-    <string name="hintCity">City</string>
+    <string name="hintAddress">Address</string>
 
     <string name="txtForDoctorCashier">Note that the following info is ONLY required for Doctors or Cashiers:</string>
     <string name="txtCertification">Certification:</string>
