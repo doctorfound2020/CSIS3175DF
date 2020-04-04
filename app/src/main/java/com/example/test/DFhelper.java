@@ -302,6 +302,10 @@ public class DFhelper extends SQLiteOpenHelper {
         return pass; //return this password, for comparisons
     }
 
+    //seperate upgrade methods for each user.
+
+
+
 
 
 
