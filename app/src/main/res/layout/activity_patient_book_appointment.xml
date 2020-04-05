@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003459"
+    tools:context=".PatientBookAppointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txtba"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:fontFamily="serif"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7"></View>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbtneyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/txtopt1"
+                android:textColor="@android:color/white"
+                android:theme="@style/RadioButtonStyle"
+                app:fontFamily="serif"></RadioButton>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:contentDescription="@string/images"
+                android:src="@drawable/eyeimage"></ImageView>
+
+            <RadioButton
+                android:id="@+id/rbtnteeth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/txtopt2"
+                android:textColor="@android:color/white"
+                android:theme="@style/RadioButtonStyle"
+                app:fontFamily="serif"></RadioButton>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:contentDescription="@string/images"
+                android:src="@drawable/teethimage"></ImageView>
+
+            <RadioButton
+                android:id="@+id/rbtnfever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/txtopt3"
+                android:textColor="@android:color/white"
+                android:theme="@style/RadioButtonStyle"
+                app:fontFamily="serif"></RadioButton>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:contentDescription="@string/images"
+                android:src="@drawable/feverimage"></ImageView>
+
+            <RadioButton
+                android:id="@+id/rbtnother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/txtopt4"
+                android:textColor="@android:color/white"
+                android:theme="@style/RadioButtonStyle"
+                app:fontFamily="serif"></RadioButton>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:contentDescription="@string/images"
+                android:src="@drawable/stethoscopeimage"></ImageView>
+
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7"></View>
+
+        <Spinner
+            android:id="@+id/spinnerDoctor"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:autofillHints="@string/spinner"
+            android:entries="@array/doctorsname"
+            android:spinnerMode="dropdown"
+            app:fontFamily="serif"></Spinner>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7"></View>
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/date"
+            app:fontFamily="serif"></Button>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            app:fontFamily="serif"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7"></View>
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/time"
+            app:fontFamily="serif"></Button>
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            app:fontFamily="serif"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7"></View>
+
+        <EditText
+            android:id="@+id/etxtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/etxtlocation"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:fontFamily="serif"
+            tools:ignore="Autofill"></EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7"></View>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:fontFamily="serif"></TextView>
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/btnbook"
+            app:fontFamily="serif"></Button>
+
+    </LinearLayout>
+
+</ScrollView>

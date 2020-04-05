@@ -88,7 +88,13 @@ public class DFhelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.DoctorTable.NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.PatientTable.NAME);
+        db.execSQL("DROP TABLE IF EXISTS "+ DoctorFoundSchema.CashierTable.NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.AdminTable.NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.AppointmentTable.NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.PaymentTable.NAME);
+        onCreate(db);
     }
 
     //CUSTOM METHODS

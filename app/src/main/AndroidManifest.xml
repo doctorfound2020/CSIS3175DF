@@ -17,7 +17,20 @@
         <activity android:name=".PatientHomePageActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".DoctorCheckAppointment" android:parentActivityName=".DoctorHomePageActivity"/>
+        <activity android:name=".DoctorViewMessage" android:parentActivityName=".DoctorHomePageActivity"/>
+        <activity android:name=".DoctorReminder" android:parentActivityName=".DoctorHomePageActivity"/>
+        <activity android:name=".DoctorViewHistory" android:parentActivityName=".DoctorHomePageActivity"/>
+        <activity android:name=".DoctorResponseMessage" android:parentActivityName=".DoctorViewMessage"/>
+        <activity android:name=".PatientBookAppointment" android:parentActivityName=".PatientHomePageActivity"/>
+        <activity android:name=".PatientReminder" android:parentActivityName=".PatientHomePageActivity"/>
+        <activity android:name=".PatientViewMessage" android:parentActivityName=".PatientHomePageActivity"/>
+        <activity android:name=".PatientCheckAppointment" android:parentActivityName=".PatientHomePageActivity"/>
+        <activity android:name=".PatientOnlineHelp" android:parentActivityName=".PatientHomePageActivity"/>
+        <activity android:name=".PatientViewHistory" android:parentActivityName=".PatientHomePageActivity"/>
+        <activity android:name=".PatientSendMessage" android:parentActivityName=".PatientViewMessage"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

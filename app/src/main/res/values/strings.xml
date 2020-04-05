@@ -115,4 +115,59 @@
     <string name="btnToAdminTEST">To Admin TEST</string>
     <string name="btnToCashierTEST">To Cashier TEST</string>
 
+    <!-- PatientBookAppointment  -->
+    <string name="txtba">Book Appointment</string>
+    <string name="txtopt1">Eyes and Vision</string>
+    <string name="txtopt2">Teeth</string>
+    <string name="txtopt4">Others</string>
+    <string name="txtopt3">Fever</string>
+    <string name="images">imgs</string>
+    <string name="spinner">Select a Doctor</string>
+    <string name="date">Date Selection</string>
+    <string name="time">Time Selection</string>
+    <string name="etxtlocation">Enter your City</string>
+    <string name="btnbook">Book Appointment</string>
+    <string-array name="doctorsname">
+        <item>Dr.One</item>
+        <item>Dr.Two</item>
+        <item>Dr.Three</item>
+        <item>Dr.Four</item>
+    </string-array>
+
+    <!-- PatientCheckAppointment  -->
+    <string name="btncancel">Cancel</string>
+    <string name="txtinfo">Appointment info</string>
+    <string name="txtcheckapp">Check Appointments</string>
+    <string name="txthint">To cancel the appointment, please long click the appointment.</string>
+
+    <!-- PatientOnlineHelp  -->
+    <string name="btnsend">Send messages to Doctor</string>
+    <string name="btnview">View Messages from Doctor</string>
+    <string name="txtonlinehelp">Online Help</string>
+
+    <!-- PatientReminder & DoctorReminder -->
+    <string name="txtreminder">Reminder</string>
+    <string name="txtreminderinfo">Reminder Information</string>
+
+    <!-- PatientSendMessage & DoctorResponseMessage -->
+    <string name="txtsendmessage">Send Message to Doctor</string>
+    <string name="etxtdoctorname">Doctor\'s Name</string>
+    <string name="etxttitle">Subject</string>
+    <string name="etxtinfo">Please describe within 50 words</string>
+    <string name="btndiscard">Discard</string>
+    <string name="btnrespon">Respond</string>
+    <string name="etxtpatientname">Patient\'s Name</string>
+    <string name="txtdcresponsemessage">Response Message to patient</string>
+
+    <!-- PatientViewHistory & DoctorViewHistory -->
+    <string name="txtviewhistory">View Your History</string>
+    <string name="txthistoryinfo">History information</string>
+
+    <!-- PatientViewMessage & DoctorViewMessage -->
+    <string name="txtdcmessage">Doctor\'s Message</string>
+    <string name="txtviewmessage">View Message from Doctor</string>
+    <string name="txtdcviewmessage">View Messages from Patient</string>
+    <string name="txtpxmessage">Patient\'s Message</string>
+    <string name="txthint1">To respond the message, please click the message.</string>
+
 </resources>

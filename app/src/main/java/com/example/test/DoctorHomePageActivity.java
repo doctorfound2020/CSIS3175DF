@@ -24,7 +24,7 @@ public class DoctorHomePageActivity extends AppCompatActivity {
         Button btnSignOutDoctor = findViewById(R.id.btnSignOutDoctor);
         Button btnEditProfileDoctor = findViewById(R.id.btnEditProfileDoctor);
 
-        /*CURRENTLY COMMENTED OUT - WILL UNCOMMENT WHEN MERGING CODE
+
         btnCheckAppointmentDoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +55,7 @@ public class DoctorHomePageActivity extends AppCompatActivity {
                 startActivity(new Intent(DoctorHomePageActivity.this, DoctorViewHistory.class));
             }
         });
-        */
+
         btnSignOutDoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

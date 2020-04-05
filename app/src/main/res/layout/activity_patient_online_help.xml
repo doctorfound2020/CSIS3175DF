@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003459"
+    android:orientation="vertical"
+    tools:context=".PatientOnlineHelp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtonlinehelp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        app:fontFamily="serif">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#007EA7">
+    </View>
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="@string/btnsend"
+        android:layout_gravity="center"
+        app:fontFamily="serif">
+    </Button>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#007EA7">
+    </View>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="@string/btnview"
+        android:layout_gravity="center"
+        android:fontFamily="serif">
+    </Button>
+
+</LinearLayout>

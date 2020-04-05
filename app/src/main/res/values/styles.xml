@@ -7,4 +7,8 @@
         <item name="colorPrimaryDark">#007EA7</item>
         <item name="colorAccent">#007EA7</item>
     </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
 </resources>

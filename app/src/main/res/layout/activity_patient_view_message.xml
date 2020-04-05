@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#003459"
+    tools:context=".PatientViewMessage">
+
+
+    <TextView
+            android:id="@+id/txttop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtviewmessage"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            app:fontFamily="serif">
+    </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#007EA7">
+        </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txthint1"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        app:fontFamily="serif"></TextView>
+
+    <ListView
+        android:id="@+id/lvPatientVM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+    </ListView>
+
+
+
+
+
+
+</LinearLayout>
