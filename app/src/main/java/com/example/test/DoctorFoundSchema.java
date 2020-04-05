@@ -1,4 +1,4 @@
-package com.bignerdranch.android.dfdatabase.database;
+package com.example.test;
 
 public class DoctorFoundSchema {
     public static final class DoctorTable{

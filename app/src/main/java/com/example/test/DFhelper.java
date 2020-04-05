@@ -1,4 +1,4 @@
-package com.bignerdranch.android.dfdatabase.database;
+package com.example.test;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
