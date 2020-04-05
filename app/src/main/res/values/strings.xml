@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">test</string>
-    <string name="textview">View Messages from Patient</string>
-    <string name="message">Patien Message</string>
-    <string name="button">RESPOND</string>
-    <string name="message2">Patient\'s Message</string>
+    <string name="textview">Cashier\'s Reminder</string>
+    <string name="textview2">Click one of the following appointments to send a reminder to Patient and Doctor</string>
+
 </resources>
