@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">test</string>
+    <string name="textview">View Messages from Patient</string>
+    <string name="message">Patien Message</string>
+    <string name="button">RESPOND</string>
+    <string name="message2">Patient\'s Message</string>
 </resources>
