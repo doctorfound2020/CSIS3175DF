@@ -302,7 +302,43 @@ public class DFhelper extends SQLiteOpenHelper {
         return pass; //return this password, for comparisons
     }
 
+    //additional code, potentially used for EditAccountActivity.java
     //seperate upgrade methods for each user.
+    public void upgradeDoctor(DoctorFoundSchema dfs){
+        String query = "DROP TABLE IF EXISTS " + DoctorFoundSchema.DoctorTable.NAME;
+        db.execSQL(query);
+        this.recreateDoctor(db);
+    }
+    public void upgradePatient(DoctorFoundSchema dfs){
+        String query = "DROP TABLE IF EXISTS " + DoctorFoundSchema.PatientTable.NAME;
+        db.execSQL(query);
+        this.recreatePatient(db);
+        this.insertPatient(dfs);
+    }
+    public void upgradeCashier(DoctorFoundSchema dfs){
+        String query = "DROP TABLE IF EXISTS " + DoctorFoundSchema.CashierTable.NAME;
+        db.execSQL(query);
+        this.recreateCashier(db);
+    }
+    public void upgradeAdmin(DoctorFoundSchema dfs){
+        String query = "DROP TABLE IF EXISTS " + DoctorFoundSchema.AdminTable.NAME;
+        db.execSQL(query);
+        this.recreateAdmin(db);
+    }
+    //seperate recreate methods for each user
+    public void recreateDoctor(SQLiteDatabase db) {
+        db.execSQL(doctorTable);
+    }
+    public void recreatePatient(SQLiteDatabase db) {
+        db.execSQL(patientTable);
+    }
+    public void recreateCashier(SQLiteDatabase db) {
+        db.execSQL(cashierTable);
+    }
+    public void recreateAdmin(SQLiteDatabase db) {
+        db.execSQL(adminTable);
+    }
+
 
 
 

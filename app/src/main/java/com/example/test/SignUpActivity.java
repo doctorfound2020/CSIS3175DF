@@ -10,6 +10,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+/**
+ * SignUpActivity.java
+ * This class simply has the same code as EditAccountActivity.java, with some variable changes.
+ * create a whole new account, and its inserted into database.
+ * same xml as EditAccountActivity.java.
+ */
 public class SignUpActivity extends AppCompatActivity {
 
     DFhelper helper = new DFhelper(this);
