@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DFhelper extends SQLiteOpenHelper {
     private static final int VERSION = 1;
     private static final String DatabseName = "DoctorFound.db";
@@ -88,13 +91,7 @@ public class DFhelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.DoctorTable.NAME);
-        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.PatientTable.NAME);
-        db.execSQL("DROP TABLE IF EXISTS "+ DoctorFoundSchema.CashierTable.NAME);
-        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.AdminTable.NAME);
-        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.AppointmentTable.NAME);
-        db.execSQL("DROP TABLE IF EXISTS " + DoctorFoundSchema.PaymentTable.NAME);
-        onCreate(db);
+
     }
 
     //CUSTOM METHODS
@@ -346,6 +343,46 @@ public class DFhelper extends SQLiteOpenHelper {
     }
 
 
+    // get reminders
+    public List<String> getReminders(){
+        List<String> returnList = new ArrayList<>();
+
+        String query = "SELECT * FROM " + DoctorFoundSchema.AppointmentTable.NAME;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(query,null);
+
+        if(cursor.moveToFirst()){
+            do {
+                int appID = cursor.getInt(0);
+                String date = cursor.getString(1);
+                String dName = cursor.getString(2);
+                String pName = cursor.getString(3);
+
+                String reminder = "Appointment Number: " + appID + ", Date : " + date +
+                        ", Doctor Name : " + dName + ", Patient Name : " + pName;
+                returnList.add(reminder);
+            }while (cursor.moveToNext());
+        }else {
+        }
+        cursor.close();
+        db.close();
+        return returnList;
+    }
+    // add a record to appointment table
+    public boolean addAppointmentRecord(String date, String dname, String pname) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DoctorFoundSchema.AppointmentTable.Cols.DATE, date);
+        contentValues.put(DoctorFoundSchema.AppointmentTable.Cols.DOCTOR_NAME, dname);
+        contentValues.put(DoctorFoundSchema.AppointmentTable.Cols.PATIENT_NAME, pname);
+        long r = db.insert( DoctorFoundSchema.AppointmentTable.NAME,null,contentValues);
+        if(r > 0){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 
 
 

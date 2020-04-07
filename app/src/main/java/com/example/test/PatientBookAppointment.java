@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -19,8 +20,13 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class PatientBookAppointment extends AppCompatActivity {
+public class PatientBookAppointment extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     Calendar calendar;
+    String Date;
+    String Time;
+    DFhelper dFhelper;
+    String dName;
+    String pName = "Patient Name";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +43,10 @@ public class PatientBookAppointment extends AppCompatActivity {
 
         //select doctor spinner
         Spinner spinner = findViewById(R.id.spinnerDoctor);
-        ;
-
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this,R.array.doctorsname, R.layout.color_spinner_layout);
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
         spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
         //show date picker dialog
         Button btndate = findViewById(R.id.btnDate);
@@ -57,7 +62,7 @@ public class PatientBookAppointment extends AppCompatActivity {
                             @Override
                             public void onDateSet(DatePicker view, int year, int month, int day) {
                                 month = month + 1;
-                                String Date = year + "/" + month + "/" + day;
+                                Date = year + "/" + month + "/" + day;
                                 txtdate.setText(Date);
                             }
                         },year,month,day);
@@ -79,7 +84,7 @@ public class PatientBookAppointment extends AppCompatActivity {
                 TimePickerDialog tpd = new TimePickerDialog(PatientBookAppointment.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hour, int minute) {
-                        String Time = hour + ":" + minute;
+                        Time = hour + ":" + minute;
                         txttime.setText(Time);
                     }
                 },hour,minute,true);
@@ -87,9 +92,26 @@ public class PatientBookAppointment extends AppCompatActivity {
             }
         });
 
+        Button btnbook = findViewById(R.id.btnBook);
+        btnbook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String date = Date + ", " + Time;
+                dFhelper.addAppointmentRecord(date,dName,pName);
+            }
+        });
 
 
 
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        dName = parent.getItemAtPosition(position).toString();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
     }
 }

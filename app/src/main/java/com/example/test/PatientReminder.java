@@ -7,6 +7,7 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PatientReminder extends AppCompatActivity {
 
@@ -20,14 +21,13 @@ public class PatientReminder extends AppCompatActivity {
         //up bottom
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        DoctorFoundSchema dfs;
+        DFhelper dFhelper = new DFhelper(PatientReminder.this);
         ListView listView = findViewById(R.id.lvPatientReminder);
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("reminder");
-        arrayList.add("reminder");
-        arrayList.add("reminder");
 
+        List<String> reminders = dFhelper.getReminders();
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
+        ArrayAdapter arrayAdapter = new ArrayAdapter<String>(PatientReminder.this, android.R.layout.simple_list_item_1, reminders);
         listView.setAdapter(arrayAdapter);
 
 
