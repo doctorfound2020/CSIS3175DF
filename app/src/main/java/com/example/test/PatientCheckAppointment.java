@@ -27,11 +27,11 @@ public class PatientCheckAppointment extends AppCompatActivity {
         //listview
         ListView listView = findViewById(R.id.lvPatientCA);
         final ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("You have Appointment 1 comping up in 1 day.");
-        arrayList.add("You have Appointment 2 comping up in 2 days.");
-        arrayList.add("You have Appointment 3 comping up in 5 days.");
-        arrayList.add("You have Appointment 4 comping up in 1 week.");
-        arrayList.add("You have Appointment 5 comping up in 15 days.");
+        arrayList.add("You have Appointment 1 coming up in 1 day.");
+        arrayList.add("You have Appointment 2 coming up in 2 days.");
+        arrayList.add("You have Appointment 3 coming up in 5 days.");
+        arrayList.add("You have Appointment 4 coming up in 1 week.");
+        arrayList.add("You have Appointment 5 coming up in 15 days.");
 
         final ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
         listView.setAdapter(arrayAdapter);
