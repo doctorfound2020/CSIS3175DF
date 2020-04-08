@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CashierReminderActivity"
+    tools:context=".CashierReminder"
     android:background="#003459">
 
 
@@ -30,8 +30,8 @@
 
     <View
         android:id="@+id/divider2"
-        android:layout_width="409dp"
-        android:layout_height="20dp"
+        android:layout_width="410dp"
+        android:layout_height="5dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="4dp"
@@ -52,6 +52,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="176dp"
         android:layout_marginRight="176dp"
+        android:gravity="center"
         android:text="@string/textview2"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -61,7 +62,8 @@
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
     <ListView
-        android:layout_width="409dp"
+        android:id="@+id/lvCashierReminder"
+        android:layout_width="406dp"
         android:layout_height="510dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"

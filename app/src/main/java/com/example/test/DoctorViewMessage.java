@@ -26,12 +26,12 @@ public class DoctorViewMessage extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.lvDoctorVM);
         final ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("1");
-        arrayList.add("1");
-        arrayList.add("1");
-        arrayList.add("1");
-        arrayList.add("1");
-        arrayList.add("1");
+        arrayList.add("You have a message from a patient regarding Appointment 1");
+        arrayList.add("You have a message from a patient regarding Appointment 2");
+        arrayList.add("You have a message from a patient regarding Appointment 3");
+        arrayList.add("You have a message from a patient regarding Appointment 4");
+        arrayList.add("You have a message from a patient regarding Appointment 5");
+
 
         final ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayList);
         listView.setAdapter(arrayAdapter);

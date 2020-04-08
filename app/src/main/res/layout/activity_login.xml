@@ -123,8 +123,9 @@
 
     <Button
         android:id="@+id/btnToPatientTEST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:background="#FFFFFF"
         android:text="@string/btnToPatientTEST"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -138,8 +139,9 @@
 
     <Button
         android:id="@+id/btnToDoctorTEST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="47dp"
+        android:background="#FFFFFF"
         android:text="@string/btnToDoctorTEST"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -153,8 +155,9 @@
 
     <Button
         android:id="@+id/btnToAdminTEST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:background="#FFFFFF"
         android:text="@string/btnToAdminTEST"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -168,8 +171,9 @@
 
     <Button
         android:id="@+id/btnToCashierTEST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:background="#FFFFFF"
         android:text="@string/btnToCashierTEST"
         android:textSize="12sp"
         android:textStyle="bold"

@@ -16,14 +16,14 @@ public class CashierHomePageActivity extends AppCompatActivity {
 
         setTitle("Doctor Found Cashier Home Page");
 
-        Button btnSignOutCashier = findViewById(R.id.btnSignOutAdmin);
-        Button btnEditProfileCashier = findViewById(R.id.btnEditProfileAdmin);
+        Button btnSignOutCashier = findViewById(R.id.btnSignOutCashier);
+        Button btnEditProfileCashier = findViewById(R.id.btnEditProfileCashier);
         Button btnViewSendApptReminder = findViewById(R.id.btnViewSendApptReminder);
 
         btnViewSendApptReminder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // startActivity(new Intent(CashierHomePageActivity.this, CashierSendReminder.class));
+               startActivity(new Intent(CashierHomePageActivity.this, CashierReminder.class));
             }
         });
         btnSignOutCashier.setOnClickListener(new View.OnClickListener() {

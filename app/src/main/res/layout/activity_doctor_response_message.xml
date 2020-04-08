@@ -76,21 +76,22 @@
         android:columnCount="2">
 
         <Button
+            android:id="@+id/btnDoctorRespond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btnrespon"
             android:layout_gravity="center"
+            android:text="@string/btnrespon"
             app:fontFamily="serif">
 
         </Button>
 
         <Button
+            android:id="@+id/btnDoctorDiscard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btndiscard"
             android:layout_gravity="center"
-            app:fontFamily="serif">
-        </Button>
+            android:text="@string/btndiscard"
+            app:fontFamily="serif"></Button>
     </GridLayout>
 
 </LinearLayout>
