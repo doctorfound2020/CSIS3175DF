@@ -1,6 +1,8 @@
 package com.example.test;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -60,9 +62,28 @@ public class DFhelper extends SQLiteOpenHelper {
         db.execSQL(paymentTable);
 
     }
-
+//insert data
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+            db.execSQL(""+ patientTable);
+            db.execSQL(""+ doctorTable);
+            onCreate((db));
+    }
+    public boolean insertData(String patien){
+        SQLiteDatabase db= this.getWritableDatabase();
+        ContentValues contentValues= new ContentValues();
+        contentValues.put(patientTable, patien);
 
+        long result= db.insert(patientTable, null, contentValues);
+
+        return  result!= -1;// if result = -1 data will not insert
+    }
+
+    public Cursor viewData(){
+        SQLiteDatabase db= this.getReadableDatabase();
+        String query= "" + patientTable;
+        Cursor cursor= db.rawQuery(query,null);
+
+        return cursor;
     }
 }
